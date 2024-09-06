@@ -18,6 +18,7 @@ def generate_email(full_name, existing_emails):
 
     email_base = f"{f_name_clean[0]}{l_name_clean}"
 
+    # make them unique
     email = f"{email_base}@gmail.com"
     count = 1
     while email in existing_emails:
